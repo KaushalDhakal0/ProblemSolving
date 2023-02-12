@@ -14,6 +14,46 @@ var lengthOfLastWord = function(s) {
     const temp = s.trim().split(" ");
     const y = temp[temp.length - 1];
     return y.length;
+    //More faster solution
+    // return s.trim().split(" ").pop().length;
 };
 
-console.log("==========>>>>>>>>",lengthOfLastWord(str));
+
+
+
+// console.log("==========>>>>>>>>",lengthOfLastWord(str));
+
+
+
+/**
+ * @param {number} n
+ * @return {number}
+ */
+var climbStairs = function(n) {
+
+    if (n < 2) {
+
+        return 1;
+    }
+
+        let firstStep = 1;
+
+        let secondStep = 1;
+
+        let thirdStep = 0;
+
+        for (let i=2; i<=n; i++) {
+
+            thirdStep = firstStep + secondStep;
+
+            firstStep = secondStep;
+
+            secondStep = thirdStep;
+            console.log("=1=",firstStep,"=2=",secondStep,"=3=",thirdStep);
+        }
+
+        return thirdStep;
+        
+};
+
+console.log(climbStairs(3));
