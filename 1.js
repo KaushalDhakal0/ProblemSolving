@@ -56,4 +56,16 @@ var climbStairs = function(n) {
         
 };
 
-console.log(climbStairs(3));
+// console.log(climbStairs(3));
+
+
+var mySqrt = function(x) {
+    return Math.sqrt(x).round();
+};
+const mySqrt = function(x) {
+    let result = 1;
+    while (result*result <= x) result++;
+    return result - 1;
+};
+
+console.log("++++++======>",mySqrt(2));
