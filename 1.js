@@ -60,12 +60,12 @@ var climbStairs = function(n) {
 
 
 var mySqrt = function(x) {
-    return Math.sqrt(x).round();
+    return Math.round(Math.sqrt(x));
 };
-const mySqrt = function(x) {
-    let result = 1;
-    while (result*result <= x) result++;
-    return result - 1;
-};
+// const mySqrt = function(x) {
+//     let result = 1;
+//     while (result*result <= x) result++;
+//     return result - 1;
+// };
 
-console.log("++++++======>",mySqrt(2));
+console.log("++++++======>",mySqrt(8));
