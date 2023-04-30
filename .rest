@@ -1,0 +1,4 @@
+
+
+# Getting File From Server
+GET http://localhost:8080/
